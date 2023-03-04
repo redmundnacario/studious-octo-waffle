@@ -1,11 +1,11 @@
 import React from "react";
 
-import CalendarTable from "./CalendarTable";
+import CalendarGrid from "../components/CalendarGrid";
 import { MONTHS } from "../constants";
 
 import "../styles/Calendar.css";
 
-const Calendar = () => {
+const CalendarPage = () => {
     const currentDay = new Date();
 
     return (
@@ -19,10 +19,10 @@ const Calendar = () => {
                 </div>
             </div>
             <div className="calendar-body">
-                <CalendarTable currentDay={currentDay} />
+                <CalendarGrid currentDay={currentDay} />
             </div>
         </div>
     );
 };
 
-export default Calendar;
+export default CalendarPage;

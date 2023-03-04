@@ -1,6 +1,6 @@
 import { WEEKDAYS, CALENDAR_DAYS_LENGTH } from "../constants";
 
-const CalendarTable = ({ currentDay }) => {
+const CalendarGrid = ({ currentDay }) => {
     // sets the 1st day of the month temporarily based on current month
     const firstDayOfMonth = new Date(
         currentDay.getFullYear(),
@@ -41,7 +41,7 @@ const CalendarTable = ({ currentDay }) => {
     return (
         <div className="calendar-grid">
             {WEEKDAYS.map((dayName) => (
-                <div className="weekdays-name" key={dayName}>
+                <div className="calendar-weekdays-name" key={dayName}>
                     <h3>{dayName}</h3>
                 </div>
             ))}
@@ -51,9 +51,9 @@ const CalendarTable = ({ currentDay }) => {
                         key={index}
                         className={
                             (day.isCurrentMonth
-                                ? "currentMonth"
-                                : "notCurrentMonth") +
-                            (day.isCurrentDay ? " currentDay" : "")
+                                ? "current-month"
+                                : "not-current-month") +
+                            (day.isCurrentDay ? " current-day" : "")
                         }
                         onClick={() => props.changeCurrentDay(day)}
                     >
@@ -65,4 +65,4 @@ const CalendarTable = ({ currentDay }) => {
     );
 };
 
-export default CalendarTable;
+export default CalendarGrid;

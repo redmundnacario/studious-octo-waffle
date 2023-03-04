@@ -14,19 +14,19 @@
     border-right: 1px solid black;
 }
 
-.weekdays-name {
+.calendar-weekdays-name {
     color: black;
 }
 
-.currentMonth {
+.current-month {
     color: black;
 }
 
-.currentDay {
+.current-day {
     color: red;
     font-weight: bolder;
 }
 
-.notCurrentMonth > p {
+.not-current-month > p {
     visibility: hidden;
 }
