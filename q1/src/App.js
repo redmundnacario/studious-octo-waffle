@@ -1,7 +1,5 @@
 import CalendarPage from "./pages/CalendarPage";
 
-import "./styles/style.css";
-
 const App = () => {
     return (
         <div className="AppBody">
