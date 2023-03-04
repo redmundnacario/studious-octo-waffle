@@ -1,0 +1,8 @@
+.counter-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-group {
+    margin-top: 20px;
+}

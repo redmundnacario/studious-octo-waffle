@@ -1,0 +1,9 @@
+.progress-bar {
+    width: 20vw;
+    background-color: whitesmoke;
+}
+
+.progress-value {
+    height: 20px;
+    background-color: yellow;
+}
